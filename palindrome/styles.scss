@@ -1,0 +1,147 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body {
+background-color: #f97000cc;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+	.container {
+		max-width: 100%;
+		min-height: 100vh;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+}
+.title {
+	text-align: center;
+	font-size: 2.5rem;
+	margin: 3rem 0 2rem 0;
+	color: #4a0cb5;
+	text-shadow: #4a0cb5;
+
+
+}
+.palindrome-checker {
+	display: flex;
+flex-direction: column;
+	align-items:center;
+	justify-content: center;
+border: 1px solid ;
+background: #fff;
+border-radius: 20px;
+max-height: 800px;
+max-width: 80vw;
+text-align: center;
+box-shadow: 10px 10px rgba(0,0,0,0.2);
+padding: 20px;
+&__flexrow{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+		&__title {
+			padding: 10px;
+			color: #4a0cb5;
+			font-weight: 600;
+			
+		}
+
+		&__input {
+			height: 30px;
+    width: 250px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px;
+	 border: none;
+	 border-bottom:3px solid #7034d8;
+	 box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+	 
+		}
+
+		&__result{
+	display: none;
+		}
+
+		&__button {
+			width: 5rem;
+			height: 3rem;
+			border-radius: 20px;
+			font-size: 1.2rem;
+			font-weight: 800;
+		background: #7034d8;
+		color: #dbc21f;
+		transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Add transition for background color, text color, and transform */
+
+		&:hover {
+			 cursor: pointer; /* Change cursor to pointer on hover */
+			 background: #5e29b9; /* Change background color on hover */
+			 color: #f0d547; /* Change text color on hover */
+			 transform: scale(1.1); /* Scale up the button slightly on hover */
+		}
+		
+		}
+}
+
+.palindrome-definition {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center; /* Center aligns the text */
+	margin-top: 50px; /* Adds margin space on the top */
+	max-width: 430px; /* Sets the max width to 600px*/
+	height: 150px; /* Sets the height to 150 pixels */
+	background: #24c0f0; /* Sets the background color to a light blue */
+	box-shadow: 10px 10px rgba(0,0,0,0.2); /* Adds a box shadow with some offset and transparency */
+	border-radius: 25px; /* Rounds the corners of the container */
+	padding: 1rem 0 1rem 0; /* Adds padding to the top and bottom of the container */
+	font-size: 1.2rem; /* Sets the font size to 1.5 times the default */
+	transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Add transition for background color, text color, and transform */
+
+		&:hover {
+			 cursor: pointer; /* Change cursor to pointer on hover */
+			 background: #732404; /* Change background color on hover */
+			 color: #f0d547; /* Change text color on hover */
+			 transform: scale(1.1); /* Scale up the button slightly on hover */
+		}
+		
+  
+&__definition {
+	color: rgb(250, 241, 215); /* Sets the color of the definition text */
+}
+
+&__dfn {
+	font-style: italic; /* Sets the text inside this element to italic */
+	font-weight: 700; /* Sets the font weight to bold */
+	transition: color 0.3s; /* Add transition for color change */
+
+	&:hover {
+		 color: #dbc21f; /* Change text color on hover */
+		 animation: rotateAnimation 0.5s ease-in-out; /* Apply rotation animation on hover */
+	}
+
+}
+}
+
+
+.main-image {
+	overflow-clip-margin: content-box;
+	overflow: clip;
+	border-radius: 20% 50%;
+	opacity: 0.85;
+	animation: rotateAnimation 10s linear infinite; /* Apply rotation animation continuously */
+ }
+ 
+ @keyframes rotateAnimation {
+	0% {
+	  transform: rotate(0deg); /* Start rotation angle */
+	}
+	50% {
+	  transform: rotate(180deg); /* Midway rotation angle */
+	}
+	100% {
+	  transform: rotate(-180deg); /* End rotation angle */
+	}
+ }
